@@ -1,56 +1,83 @@
-
 <!DOCTYPE html>
-<html lang="fr" class="h-100 translated-ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gestion contact</title>
-    <!-- Favicons -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    $(document).ready(function(){
+        $("#b_ajout").click(function(){
+            $("#ajout").css("display","block");
+            $("#container").css("display","none");
+  
+        });
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
-
-<script>$(document).ready(function () {
-    $('#example').DataTable();
-});</script>
-
-</head>  
-<body class="d-flex flex-column h-100">
+        $("#b_rech").click(function(){
+            $("#recherche").css("display","block");
+            $("#container").css("display","none");
+  
+        });
+        $("#retour").click(function(){
+            $("#ajout").css("display","none");
+            $("#container").css("display","block");
+  
+        });
+    });
+   </script>
+<div>
+    <div id="container" style="display: block;" >
+        <div>
+            <h1>TELEPHONE</h1>
+            <div class="icone">
     
-<!-- Begin page content -->
-<main class="flex-shrink-0">
-  <div class="container">
-    <h1 class="mt-5">Sticky footer</h1>
-    <table id="example" class="table table-striped" style="width:100%">
-        <thead>
-        <?php  ?>  
-            <tr>
-                <th>Nom</th>
-                <th>Numéro</th>
-            </tr>
-              
-        </thead>
-        <tbody>
-             
-            <tr>
-                <td> zangue</td>
-                <td>697004863</td>
-            </tr>
-            <tr>
-                <td>donfack</td>
-                <td>632145725</td>
-            </tr>
-            
-        </tbody>
-    </table> 
-  </div>
-</main>
+                <svg id="b_ajout"  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-plus" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    <path fill-rule="evenodd" d="M12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0 0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5z"/>
+                </svg>
+                
+                <svg id="b_rech" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </div>
+    
+            <div>
+                voici l'endroit où on va ajouter les contacts les gars
+            </div>
+        </div>
+    </div>
+    
+      <div id="ajout" style="display: none;" >
+            <div>
+                <h1>Ajouter un contact</h1>
+                    <form action=""id="form">
+                        <input type="text" placeholder="Nom" >
 
-    </body>
+                        <input type="text" placeholder="Téléphone" >
+
+                        <input type="text" placeholder="E-mail" >
+                        
+                        <input type="text" placeholder="Groupes">
+                    
+                    </form>
+                <div>
+                    <span id="retour" >Annuler</span>
+                    <span>Enregister</span>
+                </div>
+            </div>
+      </div>
+    
+      <div id="recherche" style="display: none;"  >
+            <div>
+                <input type="search" placeholder="Rechercher" >
+            </div>
+      </div>
+      
+</div>
+</body>
 </html>
