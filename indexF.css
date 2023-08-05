@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 6git 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+th {
+    padding: 12px;
+    background-color: rgb(129, 142, 153);
+}
+table{
+    width: 90%;
+    border-radius: 15px;
+    height: auto;
+    margin-left: 14px;
+}
+svg{
+    margin: 25px;
+    cursor: pointer;
+}
+input{
+    border-radius: 25px;
+    border-style: double;
+    padding: 15px;
+    width: 250px;
+    margin: 10px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    height: 50px;
+    width: 250px;
+}
+button{
+    font-size: 20px;
+    margin: 25px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(177, 177, 177);
+    padding: 10px;
+    border-radius: 15px;
+}
+#form{
+    align-items: center;
+}
